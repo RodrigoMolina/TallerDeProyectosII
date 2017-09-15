@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="refresh" content="{{ frecuencia }}" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  </head>
+  <body>
+    Frecuencia = {{ frecuencia }}
+    <table class="table table-inverse">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Promedio</th>
+          <th>Ultima Muestra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Temperatura</th>
+          <td>{{ p[0] }} Cº</td>
+          <td>{{ u[0] }} Cº</td>
+        </tr>
+        <tr>
+          <th scope="row">Humedad</th>
+          <td>{{ p[1] }}%</td>
+          <td>{{ u[1] }}%</td>
+        </tr>
+        <tr>
+          <th scope="row">Presion</th>
+          <td>{{ p[2] }} hPa</td>
+          <td>{{ u[2] }} hPa</td>
+        </tr>
+        <tr>
+          <th scope="row">Viento</th>
+          <td>{{ p[3] }} Km/h</td>
+          <td>{{ u[3] }} Km/h</td>
+        </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="/" role="button">Back</a>
+  </body>
+</html>
