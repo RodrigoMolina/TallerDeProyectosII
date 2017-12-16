@@ -19,17 +19,6 @@ void handleRoot() {
  String s = MAIN_page; //Lee el contenido HTML
  server.send(200, "text/html", s); //Envia la pagina web
 }
-
-
-
-
-
-
-
-
-
-
-
  
 //===============================================================
 //                  Configuracion
