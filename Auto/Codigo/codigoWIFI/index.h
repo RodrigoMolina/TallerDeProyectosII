@@ -8,19 +8,20 @@ const char MAIN_page[] PROGMEM = R"=====(
 	<CENTER>
 		<B>Control</B>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="Derecha">
+			<input type="hidden" name="Direccion" value="D">
 			<input type="submit" value="Derecha" />
 		</form>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="Izquierda">
+			<input type="hidden" name="Direccion" value="I">
 			<input type="submit" value="Izquierda" />
 		</form>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="Avanzar">
+			<input type="hidden" name="Direccion" value="A">
 			<input type="submit" value="Avanzar" />
 		</form>
 		<form action="" method="get">
-			<input type="submit" value="Submit">
+			<input type="hidden" name="Direccion" value="R">
+			<input type="submit" value="Retroceder" />
 		</form>
 	</CENTER>	
 </BODY>
