@@ -25,21 +25,15 @@ void handleRoot() {
 //                  Configuracion
 //===============================================================
 void setup(void){
-  
-  Serial.begin(9600);  
-  Serial.println("");
 
   SerialESP.begin(9600);
   
   WiFi.mode(WIFI_AP);           //Configura el modulo wifi como access point
   WiFi.softAP(ssid, password);  
-  IPAddress myIP = WiFi.softAPIP(); //Obtiene la ip
-  Serial.print("HotSpt IP:");
-  Serial.println(myIP);
+  
   server.on("/", handleRoot);      //Cuando se navega a la raiz de la pagina se ejecuta
 								   //se ejecuta la funcion handleRoot()
   server.begin();                  //Inicia el servidor
-  Serial.println("HTTP server started");
     
 }
 //===============================================================
