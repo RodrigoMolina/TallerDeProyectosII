@@ -2,28 +2,66 @@
 const char MAIN_page[] PROGMEM = R"=====(
 <HTML>
 	<HEAD>
-			<TITLE>My first web page</TITLE>
+			<TITLE>CarCar</TITLE>
 	</HEAD>
-<BODY>
+<BODY style="background-color:green">
+     
 	<CENTER>
-		<B>Control</B>
+		<H1 style="font-size:80px">CarCar</H1>
+
+<table style="width:50%">
+  <tr>
+    <th></th>
+    <th></th> 
+    <th>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="D">
-			<input type="submit" value="Derecha" />
-		</form>
+			<input type="hidden" name="Data"  value="N">
+			<input type="submit" style="width:180px;height:60px;font-size: 200%;" value="PARAR" />
+		</form></th>
+  </tr>
+  <tr>
+    <td>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="I">
-			<input type="submit" value="Izquierda" />
+			<input type="hidden" name="Data"  value="A">
+			<input type="submit" style="width:180px;height:60px;font-size: 370%;" value="^" />
 		</form>
+	</td>
+    <td></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="A">
-			<input type="submit" value="Avanzar" />
+			<input type="hidden" name="Data"  value="R">
+			<input type="submit" style="width:180px;height:60px;font-size: 300%;" value="v" />
 		</form>
+	</td>
+    <td>
+		
+	</td> 
+    <td></td>
+  </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <th>
 		<form action="" method="get">
-			<input type="hidden" name="Direccion" value="R">
-			<input type="submit" value="Retroceder" />
+			<input type="hidden" name="Data" value="I">
+			<input type="submit" style="width:180px;height:60px;font-size: 300%;" value="<" />
 		</form>
-	</CENTER>	
+	</th> 
+    <th>
+		<form action="" method="get">
+			<input type="hidden" name="Data" value="D">
+			<input type="submit" style="width:180px;height:60px;font-size: 300%;" value=">" />
+		</form>
+	</th>
+    <td></td>
+    <th></th>
+    <td></td>
+  </tr>
+</table>
+</CENTER>	
 </BODY>
 </HTML>
 )=====";

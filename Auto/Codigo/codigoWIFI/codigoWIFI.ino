@@ -17,7 +17,7 @@ SoftwareSerial SerialESP(1, 0);
 void handleRoot() {  
  String s = MAIN_page; //Lee el contenido HTML
  server.send(200, "text/html", s); //Envia la pagina web
- String dato = (server.arg("Direccion"));   
+ String dato = (server.arg("Data"));   
  Serial.write(dato[0]);  
 }
  
@@ -25,8 +25,8 @@ void handleRoot() {
 //                  Configuracion
 //===============================================================
 void setup(void){
-
-  SerialESP.begin(9600);
+  
+  Serial.begin(9600);  
   
   WiFi.mode(WIFI_AP);           //Configura el modulo wifi como access point
   WiFi.softAP(ssid, password);  

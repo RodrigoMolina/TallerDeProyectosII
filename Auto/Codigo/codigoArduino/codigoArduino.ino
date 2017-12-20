@@ -60,7 +60,7 @@ void loop() {
                 break;  
              case 'R':
                 if(estadoTraccion == 0){
-                  velocidad = -150;
+                  velocidad = 105;
                   estadoTraccion = -1;
                   digitalWrite(MOTOR_CONTROL_PIN, HIGH);    //velocidad maxima en 0
                 }else{
@@ -95,7 +95,7 @@ void loop() {
                       velocidad = 255;
                     }
                   }else{
-                    if(velocidad>175){
+                    if(velocidad>100){
                       velocidad = 0;
                       estadoTraccion = 0;
                       digitalWrite(MOTOR_CONTROL_PIN, LOW);    //velocidad maxima en 255
